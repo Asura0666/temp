@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Shop</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <h1>Bike Dekhoo</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Find Your Perfect Ride</h2>
+            <p>Browse our selection of top-quality bikes and gear.</p>
+        </section>
+        <section class="gallery">
+            <div class="gallery-item">
+                <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/1/versions/--standard1724921659295.jpg?q=80" alt="Bike 1" class="gallery-img" onclick="openPopup('bike1.jpg')">
+                <p>$799.99</p>
+                <h3>Adventure Bike</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="https://imgd.aeplcdn.com/664x374/n/bw/models/colors/royal-enfield-select-model-redditch-red-1668165061168.png?q=80" alt="Bike 2" class="gallery-img" onclick="openPopup('bike2.jpg')">
+                <p>$499.99</p>
+                <h3> Crusier Bike</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/156743/roadster-right-front-three-quarter.png?isig=0&q=80" alt="Bike 3" class="gallery-img" onclick="openPopup('bike3.jpg')">
+                <p>$599.99</p>
+                <h3>Electric Bike </h>
+            </div>
+            <div class="gallery-item">
+                <img src="https://imgd.aeplcdn.com/664x374/n/bw/models/colors/hero-select-model-black-and-accent-1706531462570.png?q=80" alt="Bike 4" class="gallery-img" onclick="openPopup('bike4.jpg')">
+                <p>$199.99</p>
+                <h3>Daily Commuter</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="https://image.made-in-china.com/2f0j00dSHYohjRkWcw/Professional-Adult-Downhill-Trek-MTB-Frame-Bycycles-Kid-26-Mountain-Bike.webp" alt="Bike 5" class="gallery-img" onclick="openPopup('bike5.jpg')">
+                <p>$99</p>
+                <h3>Bicycles</h3>
+            </div>
+        </section>
+    </main>
+
+    <!-- Popup Modal -->
+    <div id="popup" class="popup">
+        <span class="close-btn" onclick="any()">&times;</span>
+        <img id="popup-img" src="" alt="Popup Image">
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Bike Gallery. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function openPopup(src) {
+            document.getElementById('popup-img').src = src;
+            document.getElementById('popup').style.display = 'flex';
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+        
+    </script>
+
+    <footer>
+        <p> &copy; 2024 Bike Dekkho. All rights reserved.</p>
+    </footer>
+</body>
+</html>
